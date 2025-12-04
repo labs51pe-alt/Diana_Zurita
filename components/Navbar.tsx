@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     { name: 'Beneficios', href: '#beneficios' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Servicios', href: '#servicios' },
-    { name: 'Proceso', href: '#proceso' },
+    { name: 'Sobre Mí', href: '#sobre-mi' },
   ];
 
   return (

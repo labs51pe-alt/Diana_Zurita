@@ -39,8 +39,8 @@ const Hero: React.FC = () => {
           </h1>
           
           <h2 className="text-lg md:text-2xl text-gray-100 mb-10 font-medium max-w-xl leading-relaxed">
-            Maquillaje para novias, eventos sociales y sesiones en Lima. 
-            <span className="block mt-2 font-bold text-yellow-300">¡Tu mejor versión empieza aquí!</span>
+            Especialista en novias y pieles blindadas. 
+            <span className="block mt-2 font-bold text-yellow-300">Técnicas modernas y acabados perfectos en Lima.</span>
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-5">
@@ -73,8 +73,8 @@ const Hero: React.FC = () => {
                 <Heart className="text-white fill-white" size={18} />
               </div>
               <div className="flex flex-col">
-                <span className="font-display font-bold text-white text-xl">150+</span>
-                <span className="text-xs text-gray-200 font-bold uppercase">Novias Felices</span>
+                <span className="font-display font-bold text-white text-xl">VIP</span>
+                <span className="text-xs text-gray-200 font-bold uppercase">Atención Exclusiva</span>
               </div>
             </div>
             
@@ -93,8 +93,8 @@ const Hero: React.FC = () => {
                 <Star className="text-black fill-black" size={18} />
               </div>
               <div className="flex flex-col">
-                <span className="font-display font-bold text-white text-xl">8 Años</span>
-                <span className="text-xs text-gray-200 font-bold uppercase">Experiencia</span>
+                <span className="font-display font-bold text-white text-xl">Pro</span>
+                <span className="text-xs text-gray-200 font-bold uppercase">Técnica Certificada</span>
               </div>
             </div>
           </motion.div>

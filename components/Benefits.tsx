@@ -1,32 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Star, Heart, Clock } from 'lucide-react';
+import { Award, Star, Heart, Zap } from 'lucide-react';
 import { BenefitItem } from '../types';
 
 const benefits: BenefitItem[] = [
   {
     id: 1,
-    title: 'Experiencia Top',
-    description: 'Maquilladora certificada con 8+ años creando looks de impacto.',
+    title: 'Formación Vanguardista',
+    description: 'Certificada con las últimas técnicas del mercado. Adiós a lo anticuado.',
     icon: Award
   },
   {
     id: 2,
     title: 'Marcas Premium',
-    description: 'Solo uso lo mejor: MAC, Huda Beauty, Fenty. ¡Tu piel lo merece!',
+    description: 'Mi kit es mi orgullo: MAC, Huda Beauty, Fenty. Solo lo mejor para ti.',
     icon: Star
   },
   {
     id: 3,
-    title: '100% Tú',
-    description: 'Asesoría personalizada. No te disfrazo, realzo quien eres.',
+    title: '100% Dedicación',
+    description: 'Al ser exclusiva, me tomo el tiempo necesario. Sin prisas, solo perfección.',
     icon: Heart
   },
   {
     id: 4,
-    title: 'Long Lasting',
-    description: 'Técnicas blindadas. Baila toda la noche, tu makeup seguirá ahí.',
-    icon: Clock
+    title: 'Fresh Trends',
+    description: 'Conozco lo que está de moda en redes y pasarelas. Tu look será actual.',
+    icon: Zap
   }
 ];
 

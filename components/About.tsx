@@ -31,8 +31,8 @@ const About: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               className="absolute top-10 -right-6 bg-brand-dark p-6 rounded-2xl shadow-xl z-20 hidden md:block rotate-6"
             >
-               <p className="font-display text-4xl font-extrabold text-brand-primary text-center">8+</p>
-               <p className="text-xs font-bold uppercase tracking-wide text-white">Años de Exp.</p>
+               <p className="font-display text-4xl font-extrabold text-brand-primary text-center">New</p>
+               <p className="text-xs font-bold uppercase tracking-wide text-white">Talent</p>
             </motion.div>
           </motion.div>
 
@@ -45,14 +45,14 @@ const About: React.FC = () => {
             className="w-full lg:w-1/2"
           >
             <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-4">Hola, soy Diana 👋</h3>
-            <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Más que maquillaje,<br/>es <span className="text-brand-accent">actitud.</span></h2>
+            <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Frescura, Tendencia y <span className="text-brand-accent">Técnica.</span></h2>
             
             <div className="prose prose-lg text-gray-600 mb-8 font-medium">
               <p className="mb-4">
-                Mi misión es simple: que te mires al espejo y digas <strong>"¡WOW, esa soy yo!"</strong>. 
+                Como maquilladora profesional recién titulada, mi enfoque es traer lo <strong>último en tendencias mundiales</strong> a tu rostro. No me quedo en lo antiguo; aplico las técnicas más modernas de piel blindada y acabados HD que se usan hoy en día.
               </p>
               <p>
-                Con más de 8 años de experiencia, he aprendido que el maquillaje no es para esconderte, es para <span className="text-brand-primary font-bold">celebrarte</span>. He certificado mis técnicas internacionalmente para traerte lo último en tendencias y acabados de piel perfecta.
+                Mi compromiso es la perfección. Al estar construyendo mi carrera, pongo <span className="text-brand-primary font-bold">el 200% de dedicación</span> en cada clienta. Me tomo el tiempo que otros no se toman para asegurar que cada detalle esté impecable.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-dark font-display text-lg">Certificada</h4>
-                  <p className="text-sm text-gray-500 font-bold">Formación Internacional</p>
+                  <p className="text-sm text-gray-500 font-bold">Especialización Pro</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -71,15 +71,15 @@ const About: React.FC = () => {
                    <CheckCircle className="w-6 h-6" strokeWidth={3} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark font-display text-lg">Alta Gama</h4>
-                  <p className="text-sm text-gray-500 font-bold">MAC, NARS, Charlotte</p>
+                  <h4 className="font-bold text-brand-dark font-display text-lg">Kit de Lujo</h4>
+                  <p className="text-sm text-gray-500 font-bold">Inversión en Calidad</p>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-4 items-center">
               <div className="bg-brand-dark text-white px-6 py-3 rounded-full font-bold shadow-lg transform -rotate-1">
-                Tu belleza, mi arte. 💖
+                Pasión por el detalle. 💖
               </div>
             </div>
           </motion.div>
