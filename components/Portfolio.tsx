@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { PortfolioItem } from '../types';
 
 const portfolioData: PortfolioItem[] = [
-  { id: 1, category: 'novias', image: 'https://images.unsplash.com/photo-1512255749226-c1464c8d712f?q=80&w=800&auto=format&fit=crop', title: 'Novia Romántica' },
-  { id: 2, category: 'social', image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop', title: 'Gala de Noche' },
-  { id: 3, category: 'editorial', image: 'https://images.unsplash.com/photo-1502451559902-1dc30c6fb0e8?q=80&w=800&auto=format&fit=crop', title: 'Editorial Chic' },
-  { id: 4, category: 'novias', image: 'https://images.unsplash.com/photo-1595167664654-20b17169623d?q=80&w=800&auto=format&fit=crop', title: 'Boda de Día' },
-  { id: 5, category: 'quinceañeras', image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=800&auto=format&fit=crop', title: 'Quinceañera Glam' },
-  { id: 6, category: 'social', image: 'https://images.unsplash.com/photo-1609536294709-665e7a9bc976?q=80&w=800&auto=format&fit=crop', title: 'Graduación' },
-  { id: 7, category: 'novias', image: 'https://images.unsplash.com/photo-1546171753-97d7676e4602?q=80&w=800&auto=format&fit=crop', title: 'Novia Clásica' },
+  { id: 1, category: 'novias', image: 'https://images.unsplash.com/photo-1616165609129-9e320d39e083?q=80&w=800&auto=format&fit=crop', title: 'Novia Romántica' },
+  { id: 2, category: 'social', image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=800&auto=format&fit=crop', title: 'Gala de Noche' },
+  { id: 3, category: 'editorial', image: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=800&auto=format&fit=crop', title: 'Editorial Chic' },
+  { id: 4, category: 'novias', image: 'https://images.unsplash.com/photo-1628147573934-118e7e17088b?q=80&w=800&auto=format&fit=crop', title: 'Boda de Día' },
+  { id: 5, category: 'quinceañeras', image: 'https://images.unsplash.com/photo-1599557448373-10705a397166?q=80&w=800&auto=format&fit=crop', title: 'Quinceañera Glam' },
+  { id: 6, category: 'social', image: 'https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?q=80&w=800&auto=format&fit=crop', title: 'Graduación' },
+  { id: 7, category: 'novias', image: 'https://images.unsplash.com/photo-1512255749226-c1464c8d712f?q=80&w=800&auto=format&fit=crop', title: 'Novia Clásica' },
   { id: 8, category: 'editorial', image: 'https://images.unsplash.com/photo-1621786043695-46793ce145d4?q=80&w=800&auto=format&fit=crop', title: 'Fashion Shot' },
 ];
 

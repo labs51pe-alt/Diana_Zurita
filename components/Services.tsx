@@ -11,7 +11,7 @@ const servicesData: Service[] = [
     price: 'Desde S/35',
     duration: '40 min',
     includes: ['Piel ligera', 'Cejas naturales', 'Labios hidratados'],
-    image: 'https://images.unsplash.com/photo-1596462502278-27bfdd403348?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'dia',
@@ -20,7 +20,7 @@ const servicesData: Service[] = [
     price: 'S/60 - S/80',
     duration: '60 min',
     includes: ['Prep de piel básica', 'Tonos neutros', 'Pestañas (opcional)'],
-    image: 'https://images.unsplash.com/photo-1595167664654-20b17169623d?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1588513077610-6c929df57202?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'full-color',
@@ -29,7 +29,7 @@ const servicesData: Service[] = [
     price: 'S/100 - S/130',
     duration: '90 min',
     includes: ['Técnica Cut Crease', 'Piel Blindada', 'Pestañas 3D'],
-    image: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1502451559902-1dc30c6fb0e8?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'glam',
@@ -38,7 +38,7 @@ const servicesData: Service[] = [
     price: 'S/120 - S/150',
     duration: '90 min',
     includes: ['Piel alta cobertura', 'Contouring Pro', 'Pestañas Premium'],
-    image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'quince',
@@ -47,7 +47,7 @@ const servicesData: Service[] = [
     price: 'S/150 - S/200',
     duration: '120 min',
     includes: ['Prueba de color', 'Piel HD', 'Kit de retoque'],
-    image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1534008770285-b1a729e92621?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'editorial',
@@ -56,7 +56,7 @@ const servicesData: Service[] = [
     price: 'S/180 - S/260',
     duration: '120+ min',
     includes: ['Acabado 4K/8K', 'Estilismo facial', 'Asistencia en set'],
-    image: 'https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'nupcial',
@@ -65,7 +65,7 @@ const servicesData: Service[] = [
     price: 'S/250 - S/350',
     duration: '180 min',
     includes: ['Skin Prep de lujo', 'Pestañas Mink', 'Kit Retoque', 'Velo de novia'],
-    image: 'https://images.unsplash.com/photo-1605282409837-9755b404d02c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1595167664654-20b17169623d?q=80&w=800&auto=format&fit=crop',
     popular: true
   }
 ];
