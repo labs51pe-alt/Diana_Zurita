@@ -31,10 +31,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-white font-display text-lg">Explorar</h4>
             <ul className="space-y-3 text-sm text-gray-400 font-medium">
-              <li><a href="#inicio" className="hover:text-brand-primary transition-colors">Inicio</a></li>
-              <li><a href="#servicios" className="hover:text-brand-primary transition-colors">Servicios</a></li>
+              <li><a href="#hero" className="hover:text-brand-primary transition-colors">Inicio</a></li>
               <li><a href="#portfolio" className="hover:text-brand-primary transition-colors">Portfolio</a></li>
-              <li><a href="#faq" className="hover:text-brand-primary transition-colors">FAQ</a></li>
+              <li><a href="#servicios" className="hover:text-brand-primary transition-colors">Servicios</a></li>
+              <li><a href="#sobre-mi" className="hover:text-brand-primary transition-colors">La Artista</a></li>
             </ul>
           </div>
 

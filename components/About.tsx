@@ -1,12 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, CheckCircle, Heart } from 'lucide-react';
+import { Award, CheckCircle, Star, Heart, Zap } from 'lucide-react';
+import { BenefitItem } from '../types';
+
+const benefits: BenefitItem[] = [
+  {
+    id: 1,
+    title: 'Formación Vanguardista',
+    description: 'Certificada con las últimas técnicas del mercado. Adiós a lo anticuado.',
+    icon: Award
+  },
+  {
+    id: 2,
+    title: 'Marcas Premium',
+    description: 'Mi kit es mi orgullo: MAC, Huda Beauty, Fenty. Solo lo mejor para ti.',
+    icon: Star
+  },
+  {
+    id: 3,
+    title: '100% Dedicación',
+    description: 'Al ser exclusiva, me tomo el tiempo necesario. Sin prisas, solo perfección.',
+    icon: Heart
+  },
+  {
+    id: 4,
+    title: 'Fresh Trends',
+    description: 'Conozco lo que está de moda en redes y pasarelas. Tu look será actual.',
+    icon: Zap
+  }
+];
 
 const About: React.FC = () => {
   return (
     <section id="sobre-mi" className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-20">
           
           {/* Image Side */}
           <motion.div 
@@ -44,37 +72,16 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2"
           >
-            <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-4">Hola, soy Diana 👋</h3>
+            <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-4">La Artista 👋</h3>
             <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Frescura, Tendencia y <span className="text-brand-accent">Técnica.</span></h2>
             
             <div className="prose prose-lg text-gray-600 mb-8 font-medium">
               <p className="mb-4">
-                Como maquilladora profesional recién titulada, mi enfoque es traer lo <strong>último en tendencias mundiales</strong> a tu rostro. No me quedo en lo antiguo; aplico las técnicas más modernas de piel blindada y acabados HD que se usan hoy en día.
+                Hola, soy <strong>Diana Zurita</strong>. Como maquilladora profesional recién titulada, mi enfoque es traer lo <strong>último en tendencias mundiales</strong> a tu rostro. No me quedo en lo antiguo; aplico las técnicas más modernas de piel blindada y acabados HD que se usan hoy en día.
               </p>
               <p>
                 Mi compromiso es la perfección. Al estar construyendo mi carrera, pongo <span className="text-brand-primary font-bold">el 200% de dedicación</span> en cada clienta. Me tomo el tiempo que otros no se toman para asegurar que cada detalle esté impecable.
               </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-              <div className="flex items-start gap-4">
-                <div className="bg-brand-light p-3 rounded-xl text-brand-primary">
-                   <Award className="w-6 h-6" strokeWidth={3} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-brand-dark font-display text-lg">Certificada</h4>
-                  <p className="text-sm text-gray-500 font-bold">Especialización Pro</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="bg-brand-light p-3 rounded-xl text-brand-primary">
-                   <CheckCircle className="w-6 h-6" strokeWidth={3} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-brand-dark font-display text-lg">Kit de Lujo</h4>
-                  <p className="text-sm text-gray-500 font-bold">Inversión en Calidad</p>
-                </div>
-              </div>
             </div>
 
             <div className="flex flex-wrap gap-4 items-center">
@@ -84,6 +91,30 @@ const About: React.FC = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Fusioned Benefits Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          {benefits.map((benefit, index) => (
+            <motion.div
+              key={benefit.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              whileHover={{ y: -5 }}
+              className="bg-brand-light/50 p-6 rounded-2xl border border-transparent hover:border-brand-primary hover:bg-white transition-all duration-300"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className="p-2 bg-brand-primary/10 rounded-lg text-brand-primary">
+                  <benefit.icon size={24} strokeWidth={2.5} />
+                </div>
+                <h3 className="font-display text-lg font-bold text-brand-dark leading-tight">{benefit.title}</h3>
+              </div>
+              <p className="text-gray-600 text-sm font-medium leading-relaxed pl-1">{benefit.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
       </div>
     </section>
   );

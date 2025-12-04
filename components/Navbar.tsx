@@ -15,11 +15,9 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', href: '#hero' },
-    { name: 'Beneficios', href: '#beneficios' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Servicios', href: '#servicios' },
-    { name: 'Sobre Mí', href: '#sobre-mi' },
+    { name: 'La Artista', href: '#sobre-mi' },
   ];
 
   return (
@@ -43,10 +41,23 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
             href="#contacto"
-            className="bg-brand-primary hover:bg-brand-accent text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 shadow-lg shadow-brand-primary/40 border border-transparent hover:border-white/20"
+            animate={{ 
+              scale: [1, 1.05, 1],
+              boxShadow: [
+                "0px 0px 0px rgba(255, 45, 136, 0)",
+                "0px 0px 20px rgba(255, 45, 136, 0.5)",
+                "0px 0px 0px rgba(255, 45, 136, 0)"
+              ]
+            }}
+            transition={{ 
+              duration: 2, 
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-gradient-to-r from-brand-primary via-purple-500 to-brand-primary bg-[length:200%_auto] hover:bg-right transition-all duration-500 text-white px-8 py-3 rounded-full text-sm font-bold border border-transparent"
           >
             Reservar Cita
           </motion.a>

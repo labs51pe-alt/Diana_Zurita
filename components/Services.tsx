@@ -126,7 +126,7 @@ const Services: React.FC = () => {
                   href="#contacto"
                   className={`w-full py-4 rounded-xl font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2 ${
                       service.popular 
-                      ? 'bg-brand-primary text-white hover:bg-brand-accent shadow-lg shadow-brand-primary/30' 
+                      ? 'bg-gradient-to-r from-brand-primary to-brand-accent text-white hover:shadow-lg hover:shadow-brand-primary/30' 
                       : 'bg-gray-100 text-brand-dark hover:bg-brand-dark hover:text-white'
                   }`}
                 >

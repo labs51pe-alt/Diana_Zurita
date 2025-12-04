@@ -47,8 +47,18 @@ const Hero: React.FC = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              animate={{ 
+                boxShadow: [
+                  "0px 0px 0px rgba(255, 45, 136, 0)",
+                  "0px 0px 30px rgba(255, 45, 136, 0.6)",
+                  "0px 0px 0px rgba(255, 45, 136, 0)"
+                ]
+              }}
+              transition={{ 
+                boxShadow: { duration: 2, repeat: Infinity }
+              }}
               href="#contacto"
-              className="bg-brand-primary hover:bg-brand-accent text-white px-10 py-5 rounded-full font-bold text-lg text-center transition-all shadow-xl shadow-brand-primary/50 border-2 border-transparent"
+              className="bg-gradient-to-r from-brand-primary via-purple-500 to-brand-primary bg-[length:200%_auto] hover:bg-right transition-all duration-500 text-white px-10 py-5 rounded-full font-bold text-lg text-center border-2 border-transparent"
             >
               Reservar mi Cita ✨
             </motion.a>
