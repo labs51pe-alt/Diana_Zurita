@@ -10,7 +10,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "¿Vas a mi casa?",
-    answer: "¡Sí! El servicio es a domicilio en Lima Metropolitana (Miraflores, San Isidro, Surco, Barranco, etc). Yo llevo todo, incluyendo luces si hace falta."
+    answer: "¡Exacto! Todo es 100% a domicilio en Lima. Yo llevo el estudio a tu casa: luces, silla, maletín profesional. Tú solo relájate."
   },
   {
     question: "¿Cuánto dura el makeup?",

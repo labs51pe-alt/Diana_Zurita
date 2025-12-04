@@ -73,7 +73,7 @@ const Portfolio: React.FC = () => {
         </motion.div>
 
         <div className="text-center mt-16">
-          <a href="https://instagram.com" className="inline-flex items-center px-10 py-4 border-2 border-white text-white hover:bg-white hover:text-brand-dark rounded-full font-bold transition-colors uppercase text-sm tracking-wide gap-2">
+          <a href="https://instagram.com/dazstudiobeauty" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-10 py-4 border-2 border-white text-white hover:bg-white hover:text-brand-dark rounded-full font-bold transition-colors uppercase text-sm tracking-wide gap-2">
              Más en Instagram 📸
           </a>
         </div>

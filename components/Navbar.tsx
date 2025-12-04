@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
               </a>
             ))}
             <div className="flex space-x-6 pt-6">
-              <a href="#" className="bg-brand-light p-3 rounded-full text-brand-dark hover:bg-brand-primary hover:text-white transition-all"><Instagram size={28} /></a>
+              <a href="https://instagram.com/dazstudiobeauty" target="_blank" rel="noopener noreferrer" className="bg-brand-light p-3 rounded-full text-brand-dark hover:bg-brand-primary hover:text-white transition-all"><Instagram size={28} /></a>
               <a href="#" className="bg-brand-light p-3 rounded-full text-brand-dark hover:bg-brand-primary hover:text-white transition-all"><Facebook size={28} /></a>
             </div>
             <a

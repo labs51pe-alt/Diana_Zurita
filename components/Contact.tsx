@@ -29,11 +29,11 @@ const Contact: React.FC = () => {
             <p className="text-xl text-gray-300 mb-8 font-medium">La agenda se llena rápido (especialmente findes). ¡No te quedes sin fecha!</p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-[#20ba5a] transition-all shadow-lg hover:shadow-[#25D366]/40 transform hover:-translate-y-1">
+                <a href="https://wa.me/51921532764" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-[#20ba5a] transition-all shadow-lg hover:shadow-[#25D366]/40 transform hover:-translate-y-1">
                     <MessageCircle size={24} />
                     WhatsApp Directo
                 </a>
-                <a href="tel:+51999999999" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white hover:text-brand-dark transition-all">
+                <a href="tel:+51921532764" className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white hover:text-brand-dark transition-all">
                     <Phone size={24} />
                     Llamar Ahora
                 </a>
@@ -56,8 +56,8 @@ const Contact: React.FC = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                      <p className="text-xs text-white/70 uppercase tracking-wide font-bold">Teléfono</p>
-                      <p className="font-bold text-lg">+51 999 999 999</p>
+                      <p className="text-xs text-white/70 uppercase tracking-wide font-bold">Teléfono / WhatsApp</p>
+                      <p className="font-bold text-lg">(51) 921 532 764</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                       <p className="text-xs text-white/70 uppercase tracking-wide font-bold">Email</p>
-                      <p className="font-bold text-lg">hola@dianazurita.com</p>
+                      <p className="font-bold text-lg break-all md:break-normal">dazstudiobeauty@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -74,8 +74,8 @@ const Contact: React.FC = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                      <p className="text-xs text-white/70 uppercase tracking-wide font-bold">Zona</p>
-                      <p className="font-bold text-lg">Lima (A Domicilio)</p>
+                      <p className="text-xs text-white/70 uppercase tracking-wide font-bold">Ubicación</p>
+                      <p className="font-bold text-lg">Todo a domicilio en Lima</p>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
                     required
                     type="tel"
                     className="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:ring-0 focus:border-brand-primary outline-none transition-all bg-gray-50 font-medium"
-                    placeholder="+51..."
+                    placeholder="(51)..."
                   />
                 </div>
               </div>

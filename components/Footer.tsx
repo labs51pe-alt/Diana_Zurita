@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
               DIANA<span className="text-brand-primary">ZURITA</span>
             </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
-              Realzando tu belleza natural con la mejor energía. Servicio profesional en Lima, Perú.
+              Realzando tu belleza natural con la mejor energía. Servicio profesional 100% a domicilio en Lima, Perú.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-primary transition-all hover:-translate-y-1">
+              <a href="https://instagram.com/dazstudiobeauty" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-primary transition-all hover:-translate-y-1">
                 <Instagram size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-primary transition-all hover:-translate-y-1">
@@ -53,9 +53,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-white font-display text-lg">Contacto</h4>
             <ul className="space-y-3 text-sm text-gray-400 font-medium">
-              <li>Miraflores, Lima - Perú</li>
-              <li>hola@dianazurita.com</li>
-              <li>+51 999 999 999</li>
+              <li>Todo a domicilio en Lima</li>
+              <li>dazstudiobeauty@gmail.com</li>
+              <li>(51) 921 532 764</li>
               <li className="pt-4">
                  <a href="#contacto" className="text-brand-primary font-bold hover:underline">Solicitar cotización</a>
               </li>
@@ -64,7 +64,13 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium">
-          <p>&copy; {new Date().getFullYear()} Diana Zurita Makeup. Made with 💖 in Lima.</p>
+          <div className="flex flex-col md:flex-row items-center gap-1 text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} DAZ Studio Beauty.</p>
+            <span className="hidden md:inline mx-2 text-gray-700">|</span>
+            <p>
+              Desarrollado por <span className="text-brand-primary font-bold hover:text-white transition-colors cursor-pointer">MAGO26</span>
+            </p>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-brand-primary transition-colors">Privacidad</a>
             <a href="#" className="hover:text-brand-primary transition-colors">Términos</a>
