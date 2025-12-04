@@ -8,9 +8,9 @@ interface Message {
 }
 
 const quickOptions = [
-  { label: '📍 ¿Vas a domicilio?', answer: '¡Sí! Todo es 100% a domicilio en Lima. Llevo el estudio completo a tu casa para que te relajes.' },
+  { label: '📍 ¿Vas a domicilio?', answer: '¡Sí! Llevo todo el estudio a tu casa. Ten en cuenta que la movilidad es un costo aparte: S/18 (Tarifa plana Lima Metropolitana). Otros distritos a consultar.' },
   { label: '💄 ¿Qué marcas usas?', answer: 'Solo alta gama: MAC, Huda Beauty, Fenty, NARS. Hipoalergénico y full HD para fotos increíbles.' },
-  { label: '💰 Precios', answer: 'Mis paquetes inician desde S/150 para social y S/350 para novias. ¿Qué evento tienes?' },
+  { label: '💰 Precios', answer: 'El Maquillaje Express inicia desde S/35. El resto varía según el estilo. Recuerda que la movilidad (S/18 Lima) es un costo adicional.' },
   { label: '📅 Reservar cita', answer: '¡Genial! Las fechas vuelan. Por favor déjame tus datos en el formulario de contacto o escríbeme al WhatsApp.' },
 ];
 

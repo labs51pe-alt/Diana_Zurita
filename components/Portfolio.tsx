@@ -16,25 +16,26 @@ const portfolioData: PortfolioItem[] = [
 const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'novias' | 'social' | 'editorial' | 'quinceañeras'>('all');
 
-  const filteredItems = filter === 'all' 
+  // Logic: Filter first, then slice to take only the first 4 items
+  const filteredItems = (filter === 'all' 
     ? portfolioData 
-    : portfolioData.filter(item => item.category === filter);
+    : portfolioData.filter(item => item.category === filter)).slice(0, 4);
 
   return (
-    <section id="portfolio" className="py-24 bg-brand-dark">
+    <section id="portfolio" className="py-20 bg-brand-dark">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-6">
           <div className="max-w-xl">
             <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-2">Galería Visual</h3>
-            <h2 className="font-display text-4xl md:text-6xl text-white font-extrabold">Lookbook</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-white font-extrabold">Lookbook</h2>
           </div>
           
-          <div className="flex flex-wrap gap-3 mt-6 md:mt-0">
+          <div className="flex flex-wrap gap-2 md:gap-3">
             {['all', 'novias', 'social', 'editorial', 'quinceañeras'].map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat as any)}
-                className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${
+                className={`px-4 py-2 rounded-full text-xs md:text-sm font-bold transition-all border ${
                   filter === cat 
                     ? 'bg-brand-primary border-brand-primary text-white shadow-lg shadow-brand-primary/40' 
                     : 'bg-transparent border-gray-700 text-gray-300 hover:border-brand-primary hover:text-white'
@@ -46,8 +47,9 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
 
-        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <AnimatePresence>
+        {/* Compact Grid: 2 columns mobile, 4 columns desktop (Single Row) */}
+        <motion.div layout className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <AnimatePresence mode='popLayout'>
             {filteredItems.map((item) => (
               <motion.div
                 layout
@@ -56,25 +58,25 @@ const Portfolio: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 key={item.id}
-                className="group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer"
+                className="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer"
               >
                 <img 
                   src={item.image} 
                   alt={item.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <span className="text-yellow-300 text-xs font-bold uppercase tracking-wider mb-1">{item.category}</span>
-                  <h4 className="text-white text-2xl font-display font-bold">{item.title}</h4>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6">
+                  <span className="text-yellow-300 text-[10px] md:text-xs font-bold uppercase tracking-wider mb-1">{item.category}</span>
+                  <h4 className="text-white text-lg md:text-xl font-display font-bold leading-tight">{item.title}</h4>
                 </div>
               </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>
 
-        <div className="text-center mt-16">
-          <a href="https://instagram.com/dazstudiobeauty" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-10 py-4 border-2 border-white text-white hover:bg-white hover:text-brand-dark rounded-full font-bold transition-colors uppercase text-sm tracking-wide gap-2">
-             Más en Instagram 📸
+        <div className="text-center mt-10">
+          <a href="https://instagram.com/dazstudiobeauty" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-3 border border-white/30 bg-white/5 text-white hover:bg-white hover:text-brand-dark rounded-full font-bold transition-all uppercase text-xs tracking-wide gap-2 hover:scale-105">
+             Ver más en Instagram 📸
           </a>
         </div>
       </div>

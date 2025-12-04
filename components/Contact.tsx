@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                       <p className="text-xs text-white/70 uppercase tracking-wide font-bold">Ubicación</p>
-                      <p className="font-bold text-lg">Todo a domicilio en Lima</p>
+                      <p className="font-bold text-lg">A domicilio (Movilidad S/18 base)</p>
                   </div>
                 </div>
               </div>

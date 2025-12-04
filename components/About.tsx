@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, CheckCircle, Star, Heart, Zap } from 'lucide-react';
+import { Award, Star, Heart, Zap } from 'lucide-react';
 import { BenefitItem } from '../types';
 
 const benefits: BenefitItem[] = [
@@ -73,14 +73,14 @@ const About: React.FC = () => {
             className="w-full lg:w-1/2"
           >
             <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-4">La Artista 👋</h3>
-            <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Frescura, Tendencia y <span className="text-brand-accent">Técnica.</span></h2>
+            <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Dedición, Estudio y <span className="text-brand-accent">Técnica.</span></h2>
             
             <div className="prose prose-lg text-gray-600 mb-8 font-medium">
               <p className="mb-4">
-                Hola, soy <strong>Diana Zurita</strong>. Como maquilladora profesional recién titulada, mi enfoque es traer lo <strong>último en tendencias mundiales</strong> a tu rostro. No me quedo en lo antiguo; aplico las técnicas más modernas de piel blindada y acabados HD que se usan hoy en día.
+                <strong>DAZ Studio Beauty</strong> es un estudio de maquillaje que nace de un proceso de dedicación, estudio constante y un deseo real de ofrecer un servicio profesional y moderno. A lo largo del tiempo he perfeccionado mi técnica y mi enfoque, priorizando una <strong>preparación de piel impecable</strong> y un acabado que se adapte al estilo de cada cliente, desde looks suaves hasta propuestas <em>Full Color</em> y <em>Glam</em>.
               </p>
               <p>
-                Mi compromiso es la perfección. Al estar construyendo mi carrera, pongo <span className="text-brand-primary font-bold">el 200% de dedicación</span> en cada clienta. Me tomo el tiempo que otros no se toman para asegurar que cada detalle esté impecable.
+                Mi objetivo es que cada persona viva una experiencia cuidada, segura y cómoda, donde cada detalle esté pensado con estándares altos de <span className="text-brand-primary font-bold">higiene, precisión y calidad</span>. En DAZ Studio Beauty cada servicio es personalizado, respetando la visión de cada cliente y transformándola en un resultado pulido y elegante.
               </p>
             </div>
 
