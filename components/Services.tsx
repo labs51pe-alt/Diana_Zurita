@@ -11,7 +11,7 @@ const servicesData: Service[] = [
     price: 'Desde S/35',
     duration: '40 min',
     includes: ['Piel ligera', 'Cejas naturales', 'Labios hidratados'],
-    image: 'https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1596462502278-27bfdd403348?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'dia',
@@ -20,7 +20,7 @@ const servicesData: Service[] = [
     price: 'S/60 - S/80',
     duration: '60 min',
     includes: ['Prep de piel básica', 'Tonos neutros', 'Pestañas (opcional)'],
-    image: 'https://images.unsplash.com/photo-1583001931096-959e9ad7b535?q=80&w=800&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1595167664654-20b17169623d?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'full-color',
@@ -38,7 +38,7 @@ const servicesData: Service[] = [
     price: 'S/120 - S/150',
     duration: '90 min',
     includes: ['Piel alta cobertura', 'Contouring Pro', 'Pestañas Premium'],
-    image: 'https://images.unsplash.com/photo-1487412912498-0447507fdd96?q=80&w=2076&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'quince',
@@ -47,7 +47,7 @@ const servicesData: Service[] = [
     price: 'S/150 - S/200',
     duration: '120 min',
     includes: ['Prueba de color', 'Piel HD', 'Kit de retoque'],
-    image: 'https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?q=80&w=2036&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'editorial',
@@ -205,8 +205,7 @@ const Services: React.FC = () => {
                 </div>
                 <p className="text-sm text-gray-600 font-medium">
                     <span className="font-bold text-brand-dark">Nota Importante:</span> El servicio es a domicilio. 
-                    El costo de movilidad es adicional <span className="font-bold text-brand-primary">(S/18 Tarifa Plana en Lima Metropolitana)</span>. 
-                    Para otros distritos o playas, consultar tarifa.
+                    El costo de movilidad es adicional y <span className="font-bold text-brand-primary">está sujeto al distrito y distancia</span>.
                 </p>
             </div>
         </motion.div>

@@ -59,8 +59,8 @@ const About: React.FC = () => {
               whileHover={{ scale: 1.1 }}
               className="absolute top-10 -right-6 bg-brand-dark p-6 rounded-2xl shadow-xl z-20 hidden md:block rotate-6"
             >
-               <p className="font-display text-4xl font-extrabold text-brand-primary text-center">New</p>
-               <p className="text-xs font-bold uppercase tracking-wide text-white">Talent</p>
+               <p className="font-display text-4xl font-extrabold text-brand-primary text-center">DAZ</p>
+               <p className="text-xs font-bold uppercase tracking-wide text-white text-center">Studio</p>
             </motion.div>
           </motion.div>
 
@@ -72,21 +72,21 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2"
           >
-            <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-4">La Artista 👋</h3>
-            <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Dedición, Estudio y <span className="text-brand-accent">Técnica.</span></h2>
+            <h3 className="text-brand-primary font-bold uppercase tracking-widest text-sm mb-4">La Historia 👋</h3>
+            <h2 className="font-display text-4xl md:text-6xl text-brand-dark font-extrabold mb-6">Pasión por el <span className="text-brand-accent">Detalle.</span></h2>
             
-            <div className="prose prose-lg text-gray-600 mb-8 font-medium">
-              <p className="mb-4">
-                <strong>DAZ Studio Beauty</strong> es un estudio de maquillaje que nace de un proceso de dedicación, estudio constante y un deseo real de ofrecer un servicio profesional y moderno. A lo largo del tiempo he perfeccionado mi técnica y mi enfoque, priorizando una <strong>preparación de piel impecable</strong> y un acabado que se adapte al estilo de cada cliente, desde looks suaves hasta propuestas <em>Full Color</em> y <em>Glam</em>.
+            <div className="prose prose-lg text-gray-600 mb-8 font-medium leading-relaxed">
+              <p className="mb-6">
+                <strong>DAZ Studio Beauty</strong> es un estudio de maquillaje que nace de un proceso de dedicación, estudio constante y un deseo real de ofrecer un servicio profesional y moderno. A lo largo del tiempo he perfeccionado mi técnica y mi enfoque, priorizando una preparación de piel impecable y un acabado que se adapte al estilo de cada cliente, desde looks suaves hasta propuestas Full Color y Glam.
               </p>
               <p>
-                Mi objetivo es que cada persona viva una experiencia cuidada, segura y cómoda, donde cada detalle esté pensado con estándares altos de <span className="text-brand-primary font-bold">higiene, precisión y calidad</span>. En DAZ Studio Beauty cada servicio es personalizado, respetando la visión de cada cliente y transformándola en un resultado pulido y elegante.
+                Mi objetivo es que cada persona viva una experiencia cuidada, segura y cómoda, donde cada detalle esté pensado con estándares altos de higiene, precisión y calidad. En <strong>DAZ Studio Beauty</strong> cada servicio es personalizado, respetando la visión de cada cliente y transformándola en un resultado pulido y elegante.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4 items-center">
               <div className="bg-brand-dark text-white px-6 py-3 rounded-full font-bold shadow-lg transform -rotate-1">
-                Pasión por el detalle. 💖
+                Experiencia Segura y Cómoda ✨
               </div>
             </div>
           </motion.div>
